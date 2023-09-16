@@ -5,3 +5,4 @@ _*
 /dataset
 /.venv*
 /artifacts
+logs
