@@ -2,7 +2,5 @@ _*
 !*__.py
 
 # dev folders
-/dataset
 /.venv*
-/artifacts
 logs

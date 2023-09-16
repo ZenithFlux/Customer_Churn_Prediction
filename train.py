@@ -13,23 +13,23 @@ models = {
         "model": LogisticRegression(random_state=456),
         "params": {
             "penalty": ['l2', None],
-            "C": [0.01, 0.1, 0.5, 1]
+            "C": [0.001, 0.01, 0.1, 0.5, 1]
         }
     },
          
     "Random Forest": {
         "model": RandomForestClassifier(random_state=350),
         "params":{
-            "n_estimators": [10, 20],
-            "max_depth": [10, 20]
+            "n_estimators": [10, 50, 100],
+            "max_depth": [10, 100, 500]
         }
     },
     
     "GBoost": {
         "model": GradientBoostingClassifier(random_state=342),
         "params":{
-            "n_estimators": [10, 50],
-            "learning_rate": [0.01, 0.1]
+            "n_estimators": [10, 50, 100],
+            "learning_rate": [0.001, 0.01, 0.1, 1]
         }
     },
     
@@ -40,8 +40,8 @@ models = {
                 [100],
                 [100, 10]
             ],
-            "alpha": [0.0001, 0.01],
-            "learning_rate_init": [0.001, 0.1],
+            "alpha": [0.0001, 0.01, 1],
+            "learning_rate_init": [0.001, 0.1, 1],
             "early_stopping": [True, False]
         }
     }
