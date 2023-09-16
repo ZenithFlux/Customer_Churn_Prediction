@@ -19,7 +19,10 @@ class ChurnPredictor:
         self.model = None
     
     def search_and_fit(self, X: 'ndarray', Y: 'ndarray', models: dict):
-        "Returns a dataframe of performance report of all models and sets the best model as the 'model' attribute."
+        """
+        Performs Grid Search on each of the models.
+        Returns a dataframe of performance report of all models and sets the best model as the 'model' attribute.
+        """
         
         X, Y = X.copy(), Y.copy()
         X[:,:4] = self.scaler.fit_transform(X[:,:4])
@@ -60,7 +63,7 @@ class ChurnPredictor:
         return pd.DataFrame(report)
     
     def evaluate(self, X: 'ndarray', Y: 'ndarray'):
-        "Returns all the classification scores of the model."
+        "Returns all classification scores of the model."
         
         X, Y = X.copy(), Y.copy()
         

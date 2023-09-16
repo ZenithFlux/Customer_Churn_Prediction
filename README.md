@@ -1,6 +1,6 @@
 # Sunbase_Customer_Churn 🏃🏼‍♀️🏃🏼‍♂️💨
 
-Customer Churn prediction ML model.  
+Customer Churn predicting ML model.  
 Takes Age, Subscription_Length_Months, Monthly_Bill, Total_Usage_GB, Gender and Location as input and tells if the customer will churn or not.
 
 Model training report is named **REPORT.md**.
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 flask --app application run
 ```
 
-3. Now send a POST request to the server with the data in the request body having the following JSON format:
+3. Now send a POST request to the server with input data in the request body having the following JSON format:
 ```json
 {
   "Age": 24,

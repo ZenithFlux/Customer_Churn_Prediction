@@ -56,7 +56,7 @@ Performed model selection, training and tuning simultaneously, by running GridSe
 
 GridSearchCV automatically performs 5-fold cross-validation on each of the models, while tuning the hyperparameters.
 
-**Recall** was selected to be the decisive metric because we are more interested in reducing the False Negetive Rate in Customer Churn prediction, rather than False Positive Rate.
+**Recall** was selected to be the decisive metric because we are more interested in reducing the False Negative Rate in Customer Churn prediction, rather than False Positive Rate.
 
 We return the best trained model and move to the model evaluation phase.
 
@@ -70,11 +70,22 @@ We return the best trained model and move to the model evaluation phase.
 
 *These metric scores and plots are saved in 'artifacts' directory.*
 
+<details>
+<summary><strong> View evaluation plots of the best model</strong></summary>
+
+![Confusion Matrix](/artifacts/confusion_matrix.png)
+
+![Precision-Recall curve](/artifacts/precision_recall_curve.png)
+
+![ROC curve](/artifacts/roc_curve.png)
+
+</details>
+
 ## 6. Model Inference 🚂
 
 **Code:** *application.py*
 
-- ML model is serialized and stored on the disk using **Joblib** package for inference.
+- ML model is serialized and stored on the disk using **Joblib** library for inference.
 
 - The flask server loads the model to make predictions whenever a request comes from the client. More about this in **README.md**.
 
