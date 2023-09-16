@@ -48,3 +48,17 @@ This is the prediction done by the model.
 ## Example request (using Thunder Client) ⛈
 
 ![Request-Response](images/req.png)
+
+## Deployment
+
+This model was deployed on **AWS Elastic Beanstalk**, through continuous delivery from GitHub using **AWS CodePipeline**.
+
+Due to high cost of running instances on AWS, this deployment is currently ***disabled***.
+
+Screenshots:
+
+![CodePipeline](/images/cp.png)
+
+![AWS Beanstalk](/images/ebs.png)
+
+![Request to application](/images/aws_req.png)

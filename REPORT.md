@@ -11,6 +11,7 @@ Preparing the data and training this ML model was a several step process.
 4. [Model Selection, Training and Tuning](#4-model-selection-training-and-tuning-)
 5. [Model Evaluation](#5-model-evaluation-)
 6. [Model Inference](#6-model-inference-)
+7. [Model Deployment](#7-model-deployment-)
 
 ## 1. Data Cleaning 🧹
 
@@ -76,3 +77,20 @@ We return the best trained model and move to the model evaluation phase.
 - ML model is serialized and stored on the disk using **Joblib** package for inference.
 
 - The flask server loads the model to make predictions whenever a request comes from the client. More about this in **README.md**.
+
+## 7. Model Deployment 🌐
+
+Model deployed on **AWS Elastic Beanstalk**, through continuous delivery from GitHub using **AWS CodePipeline**.
+
+Due to high cost of running instances on AWS, this deployment is currently ***disabled***.
+
+<details>
+<summary> View Screenshots </summary>
+
+![CodePipeline](/images/cp.png)
+
+![AWS Beanstalk](/images/ebs.png)
+
+![Request to application](/images/aws_req.png)
+
+</details>
