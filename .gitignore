@@ -4,3 +4,4 @@ _*
 # dev folders
 /dataset
 /.venv*
+/artifacts
