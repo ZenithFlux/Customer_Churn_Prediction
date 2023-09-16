@@ -67,7 +67,7 @@ We return the best trained model and move to the model evaluation phase.
 
 - Evaluation plots like confusion matrix, Precision-Recall Curve and ROC Curve were drawn.
 
-*When model evaluation is running from the script, these metrics and plots are saved in 'artifacts' directory.*
+*These metric scores and plots are saved in 'artifacts' directory.*
 
 ## 6. Model Inference 🚂
 
@@ -75,4 +75,4 @@ We return the best trained model and move to the model evaluation phase.
 
 - ML model is serialized and stored on the disk using **Joblib** package for inference.
 
-- The flask server loads the model to make the predictions whenever a request comes from the client. More about this in **README.md**.
+- The flask server loads the model to make predictions whenever a request comes from the client. More about this in **README.md**.

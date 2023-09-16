@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 
 
 class ChurnPredictor:
-    """Contains both the classifier model and the feature scaler together."""
+    """Contains both the classifier model and the feature scaler."""
     
     def __init__(self):
         self.scaler = MinMaxScaler((-1,1))

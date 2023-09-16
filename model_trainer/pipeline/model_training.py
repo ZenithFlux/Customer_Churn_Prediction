@@ -18,7 +18,7 @@ def train_and_evaluate(X: 'ndarray', Y: 'ndarray', models: dict):
     """
     Performs cross-validation on all 'models' and picks the best model with best hyperparameters.
     Runs evaluation tests on the best model using a seperate test data.
-    Saves the model, report, evaluation scores and graphs at model's location.
+    Saves the model, report, evaluation scores and plots at model's location.
     Returns the best model and its evaluation scores.
     """
     

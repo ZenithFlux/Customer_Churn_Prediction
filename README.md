@@ -3,7 +3,7 @@
 Customer Churn prediction ML model.  
 Takes Age, Subscription_Length_Months, Monthly_Bill, Total_Usage_GB, Gender and Location as input and tells if the customer will churn or not.
 
-The model training report is named **REPORT.md**.
+Model training report is named **REPORT.md**.
 
 ![Customer Churn](https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png)
 
