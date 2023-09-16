@@ -1,0 +1,11 @@
+_*
+!*__.py
+
+# dev folders
+/.*
+logs
+/notebooks
+/dataset
+/images
+/*.md
+Dockerfile
