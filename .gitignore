@@ -4,3 +4,5 @@ _*
 # dev folders
 /.venv*
 logs
+.ipynb_checkpoints
+.virtual_documents

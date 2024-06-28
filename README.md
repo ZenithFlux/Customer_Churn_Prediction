@@ -1,4 +1,4 @@
-# Sunbase_Customer_Churn 🏃🏼‍♀️🏃🏼‍♂️💨
+# Customer_Churn_Prediction 🏃🏼‍♀️🏃🏼‍♂️💨
 
 Customer Churn predicting ML model.  
 Takes Age, Subscription_Length_Months, Monthly_Bill, Total_Usage_GB, Gender and Location as input and tells if the customer will churn or not.
@@ -11,8 +11,8 @@ Model training report is named **REPORT.md**.
 
 1. Clone this repository and move into the folder.
 ```bash
-git clone https://github.com/ZenithFlux/Sunbase_Customer_Churn.git  
-cd Sunbase_Customer_Churn
+git clone https://github.com/ZenithFlux/Customer_Churn_Prediction.git  
+cd Customer_Churn_Prediction
 ```
 
 1. Install all dependencies.  
